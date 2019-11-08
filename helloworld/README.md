@@ -43,7 +43,7 @@ The `fmt` packages is a standard package of goLang. You an also import your own 
 #### 📚 How is the main.go file organize?
 
 ```go
-// Package Declaratio
+// Package Declaration
 package main
 
 // Import packages we'll need
