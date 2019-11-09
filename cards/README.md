@@ -100,3 +100,19 @@ func main() {
 	cards.print()
 }
 ```
+
+#### Type Conversion or Type Casting
+
+```go
+var index int8 = 15
+
+var bigIndex int32
+
+bigIndex = int32(index)
+
+fmt.Println(bigIndex)
+```
+
+#### Testing with Go
+
+> To make a test in Go we need to create a file ending in `<file_name>_test.go`. To run all tests in a package we run `go test`.
