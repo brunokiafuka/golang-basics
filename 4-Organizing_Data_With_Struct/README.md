@@ -113,3 +113,24 @@ func (p person) print() {
 	fmt.Printf("%+v", p)
 }
 ```
+
+##### Structs with Pointers
+
+###### Pointer operators:
+
+- `&varName`: returns the memory address of the value this variable is pointing at.
+- `*pointer`: gives the value this memory address is pointing at.
+
+```go
+func main() {
+    // ...some logic
+    brunoPointer := &bruno
+	brunoPointer.updateName("Sebastian")
+}
+
+func (pointerToPerson *person) updateName(newFirstName string) {
+	(*pointerToPerson).firstName = newFirstName
+}
+```
+
+> **Note**: To turn an _address_ into _value_ we use `*address`. To turn an _value_ into _address_ we use `&value`.

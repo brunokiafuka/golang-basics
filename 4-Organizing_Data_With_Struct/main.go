@@ -32,11 +32,15 @@ func main() {
 			zip:   "1021",
 		},
 	}
-	bruno.updateName("Sebas")
+	// bruno.updateName("Sebas")
+
+	//Pointer
+	//brunoPointer := &bruno
+	bruno.updateName("Sebastian")
 	bruno.print()
 }
 
-func (p person) updateName(newFirstName string) {
+func (p *person) updateName(newFirstName string) {
 	p.firstName = newFirstName
 }
 
