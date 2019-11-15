@@ -1,4 +1,4 @@
-## Section 3 - Organizing Data With Structs
+## Section 4 - Organizing Data With Structs
 
 #### Struct
 
